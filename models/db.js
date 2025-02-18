@@ -23,7 +23,7 @@ const pool = new Pool({
   password: process.env.DB_PASSWORD,
   port: process.env.DB_PORT,
   ssl: {
-    rejectUnauthorized: false, // Opcional: desativa a verificação do certificado (use com cuidado)
+    rejectUnauthorized: true, // Opcional: desativa a verificação do certificado (use com cuidado)
   },
 });
 
